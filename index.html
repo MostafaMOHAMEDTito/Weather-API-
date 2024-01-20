@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather Api</title>
+    <link rel="stylesheet" href="css/all.min.css" />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- //....navbar..// -->
+    <section id="navbar">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-md-3">
+        <div class="container">
+          <a class="navbar-brand d-flex" href="#">
+            <div>
+              <img src="image/logo.png" class="logo" alt="logo" />
+            </div>
+            <div class="px-md-2">
+              <p class="fs-6">Weather</p>
+              <p class="logo-p">tagline goes her</p>
+            </div>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 px-md-5">
+              <li class="nav-item">
+                <button type="button" class="btn btn-toolbar">
+                  <a class="nav-link active" aria-current="page" href="#"
+                    >Home</a
+                  >
+                </button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-toolbar">
+                  <a class="nav-link" href="#">News</a>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-toolbar">
+                  <a class="nav-link" href="#">Live Cameras</a>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-toolbar">
+                  <a class="nav-link" href="#">Photos</a>
+                </button>
+              </li>
+              <li class="nav-item">
+                <button type="button" class="btn btn-toolbar">
+                  <a class="nav-link" href="#">contact</a>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!-- end navbar -->
+    <!-- home -->
+    <section id="home-weather">
+      <div class="container py-md-5">
+        <div>
+          <div class="input-group mb-3 bg-dark p-2">
+            <input
+              id="inputSearch"
+              type="text"
+              class="form-control border-dark text-white"
+              placeholder="Search....."
+              aria-label="Recipient's username"
+              aria-describedby="button-addon2"
+            />
+            <button
+              class="btn btn-outline-primary px-md-5"
+              type="button"
+              id="button-addon2"
+            >
+              Find
+            </button>
+          </div>
+        </div>
+        <div class="row my-md-5">
+          <!-- today -->
+          <div class="col-md-4 p-md-3">
+            <div class="d-flex text-white">
+              <div class="me-auto"><p id="today_name">Sundayy</p></div>
+              <div class="ms-auto"><p i><span id="today_number">13</span><span id="today_date">Januar</span></p></div>
+            </div>
+            <div class="text-white">
+              <div><p id="today-city">Cairo</p></div>
+              <div class="d-flex">
+                <p class="tamp fw-bold">
+                  <span id="today_temp">18</span>
+                  <span>0c</span>
+                </p>
+                <img
+                  id="today_img"
+                  src="image/116.png"
+                  alt="ss"
+                  srcset=""
+                  class="ms-md-auto"
+                />
+              </div>
+              <div class="text-primary">
+                <p id="today-text">Partly cloudy</p>
+              </div>
+              <div class="px-md-1">
+                <span class="px-md-3">
+                  <img src="image/icon-umberella.png" alt="dd" />
+                  <span id="humidity">20</span>%
+                </span>
+                <span class="px-md-3"
+                  ><img src="image/icon-wind.png" alt="dd" />
+                  <span
+                    id="wind_kph"
+                    >18</span
+                  >km/h</span
+                >
+                <span class="px-md-3"
+                  ><img src="image/icon-compass.png" alt="dd" /><span id="wind_dir"> East</span></span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- tomorrow -->
+          <div class="bg-dark col-md-4 p-md-3 text-center">
+            <div class="text-center text-white">
+              <div class="me-auto"><p id="tomorrow">Monday</p></div>
+            </div>
+            <div class="text-white">
+              <div><p>Cairo</p></div>
+              <div>
+                <p>18* C</p>
+                <img src="image/113.png" alt="ss" srcset="" />
+              </div>
+              <div class="text-primary"><p>Partly cloudy</p></div>
+            </div>
+          </div>
+          <!-- aftertomorow -->
+          <div class="col-md-4 p-md-3 text-center">
+            <div class="text-center text-white">
+              <div class="me-auto"><p id="tomorrow" >Tuesday</p></div>
+            </div>
+            <div class="text-white">
+              <div><p>Cairo</p></div>
+              <div>
+                <p>18* C</p>
+                <img src="image/113.png" alt="ss" srcset="" />
+              </div>
+              <div class="text-primary"><p>Partly cloudy</p></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end home -->
+    <!-- footer -->
+    <section id="footer">
+      <div class="container">
+        <div class="row text-center align-items-center">
+          <div class="input py-5 p-2 col-md-7">
+            <div class="d-flex input-group">
+              <input
+                type="text"
+                class="form-control border-dark"
+                id="putSearch"
+                placeholder="Enter your email.."
+                aria-label="Recipient's username"
+                aria-describedby="button-addon2"
+              />
+              <button
+                class="btn btn-outline-primary px-md-3"
+                type="button"
+                id="button-addon2"
+              >
+                Subscribe
+              </button>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <a href="#"><i class="fa-brands fa-facebook fa-xl p-1"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter fa-xl p-1"></i></a>
+            <a href="#"
+              ><i class="fa-brands fa-square-google-plus fa-xl p-1"></i
+            ></a>
+            <a href="#"><i class="fa fa-pinterest fa-xl p-1"></i></a>
+          </div>
+        </div>
+        <div class="text-white py-3">
+          <p>
+            Copyright 2014 Company name. Designed by Themezy. All rights
+            reserved
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- end footer -->
+    <script src="js/all.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,54 @@
+#navbar .logo {
+  width: 3.125rem;
+}
+#navbar .logo-p {
+  font-size: 0.625rem;
+  margin-top: -0.9375rem;
+}
+#navbar ul button :hover {
+  color: blue;
+  border: 0.125rem blue solid;
+  border-radius: 1.25rem;
+}
+/* home */
+#home-weather {
+  background-image: url(../image/banner.png);
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+}
+#home-weather .input-group {
+  border-radius: 30px;
+}
+#home-weather .input-group input {
+  border-radius: 30px;
+  background-color: #1e202b;
+  color: white;
+}
+#home-weather .input-group button {
+  border-radius: 30px;
+}
+#home-weather .row .col-md-4 {
+  background-color: rgb(50,53,68);
+  border: 0.3px black solid;
+  border-radius: 5px;
+  
+}
+#home-weather .row .col-md-4 .tamp {
+  font-size: 4rem;
+}
+/* footer */
+#footer {
+  background-color: rgb(38,41,54);
+}
+#footer .input-group {
+  border-radius: 30px;
+}
+#footer .input-group input {
+  border-radius: 30px;
+  background-color: #1e202b;
+  color: white;
+}
+#footer .input-group button {
+  border-radius: 30px;
+}
